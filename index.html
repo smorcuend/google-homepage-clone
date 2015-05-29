@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>An awesome requirejs app simulating Google search page</title>
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+</head>
+
+<body>
+    <header role="header" class="main_header">
+        <nav role="nav">
+            <a href="#" class="text_items">+You</a>
+            <a href="#" class="text_items">Gmail</a>
+            <a href="#" class="text_items">Images</a>
+            <a href="#" class="apps"></a>
+            <a href="#" class="sign-in">Sign in</a>
+        </nav>
+    </header>
+    <main role="main" class="search_container visible">
+        <div class="logo">
+            <span class="country">Spain</span>
+        </div>
+        <form role="search">
+            <div class="control">
+                <span class="voice"></span>
+                <span class="caret"></span>
+                <span class="description">Search by voice</span>
+            </div>
+            <input id="searchInput" maxlength="2048" name="q" autocomplete="off" title="Search" type="text" value="" aria-label="Search" aria-haspopup="true" role="combobox" aria-autocomplete="both" dir="ltr" spellcheck="false">
+            <button id="searchMorphButton" class="search"></button>
+            <div class="buttons">
+                <button id="searchButton" class="search">Google Search</button>
+                <button class="lucky">I'm Feeling Lucky</button>
+            </div>
+        </form>
+        <div class="languages">
+            Google.foo also in:
+            <a href="#">deuscth</a>
+            <a href="#">catala</a>
+            <a href="#">spanish</a>
+        </div>
+    </main>
+    <header class="header_results_container hidden">
+        <!-- #categories -->
+        <div id="categories">
+            <div id="cat-links">
+                <a class="clink active" href="#">Web</a>
+                <a id="cat_link_img" class="clink" href="#">Images</a>
+                <a class="clink" href="#">Videos</a>
+                <a class="clink" href="#">Shopping</a>
+                <a class="clink" href="#">News</a>
+                <a class="clink" href="#">More<span class="mn-dwn-arw"></span></a>
+                <a class="clink" href="#">Search tools</a>
+            </div>
+        </div>
+        <p id="time_web" class="time"></p>
+    </header>
+    <div class="results web_results_container hidden">
+        <div class="web_results"></div>
+    </div>
+    <div class="results images_results_container hidden">
+        <div class="image_results"></div>
+    </div>
+    <section class="paginator hidden">
+        <button id="prevPage">Previous page</button>
+        <button id="nextPage">Next Page</button>
+    </section>
+    <footer role="footer">
+        <div class="left">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+        </div>
+        <div class="right">
+            <a href="#">Privacy &amp; Terms</a>
+            <a href="#">Settings</a>
+            <a href="#">Use Google.com</a>
+        </div>
+    </footer>
+    <script data-main="app/scripts/config" src="bower_components/requirejs/require.js"></script>
+</body>
+
+</html>

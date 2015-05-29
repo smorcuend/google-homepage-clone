@@ -1,0 +1,6 @@
+{
+    "name": "google-search-demo-page",
+    "dependencies": {
+        "requirejs": "~2.1.17"
+    }
+}

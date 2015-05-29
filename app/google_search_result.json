@@ -1,0 +1,211 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "nextPage": [{
+            "title": "Google Custom Search - mi casa",
+            "totalResults": "22900000",
+            "searchTerms": "mi casa",
+            "count": 10,
+            "startIndex": 11,
+            "inputEncoding": "utf8",
+            "outputEncoding": "utf8",
+            "safe": "off",
+            "cx": "017576662512468239146:omuauf_lfve"
+        }],
+        "request": [{
+            "title": "Google Custom Search - mi casa",
+            "totalResults": "22900000",
+            "searchTerms": "mi casa",
+            "count": 10,
+            "startIndex": 1,
+            "inputEncoding": "utf8",
+            "outputEncoding": "utf8",
+            "safe": "off",
+            "cx": "017576662512468239146:omuauf_lfve"
+        }]
+    },
+    "context": {
+        "title": "CS Curriculum",
+        "facets": [
+            [{
+                "label": "lectures",
+                "anchor": "Lectures",
+                "label_with_op": "more:lectures"
+            }],
+            [{
+                "label": "assignments",
+                "anchor": "Assignments",
+                "label_with_op": "more:assignments"
+            }],
+            [{
+                "label": "reference",
+                "anchor": "Reference",
+                "label_with_op": "more:reference"
+            }]
+        ]
+    },
+    "searchInformation": {
+        "searchTime": 0.441968,
+        "formattedSearchTime": "0.44",
+        "totalResults": "22900000",
+        "formattedTotalResults": "22,900,000"
+    },
+    "items": [{
+        "kind": "customsearch#result",
+        "title": "Armand Van Helden Featuring Mita :: Entra Mi Casa ...",
+        "htmlTitle": "Armand Van Helden Featuring Mita :: Entra <b>Mi Casa</b> <b>...</b>",
+        "link": "https://www.cs.ubc.ca/~davet/music/track/CLUBANTH_201/CLUBANTH_201-05.html",
+        "displayLink": "www.cs.ubc.ca",
+        "snippet": "Song Information. Song Artist(s): Armand Van Helden Featuring Mita. Song Title: \nEntra Mi Casa · Year: 2001. Album Information. Album: Club Anthems 2001.",
+        "htmlSnippet": "Song Information. Song Artist(s): Armand Van Helden Featuring Mita. Song Title: <br>\nEntra <b>Mi Casa</b> &middot; Year: 2001. Album Information. Album: Club Anthems 2001.",
+        "cacheId": "YbLXEdOjqkIJ",
+        "formattedUrl": "https://www.cs.ubc.ca/~davet/music/.../CLUBANTH_201-05.html",
+        "htmlFormattedUrl": "https://www.cs.ubc.ca/~davet/music/.../CLUBANTH_201-05.html"
+    }, {
+        "kind": "customsearch#result",
+        "title": "Armand Van Helden :: Entra Mi Cassa [SMASHHIT_001-17]",
+        "htmlTitle": "Armand Van Helden :: Entra <b>Mi</b> Cassa [SMASHHIT_001-17]",
+        "link": "https://www.cs.ubc.ca/~davet/music/track/SMASHHIT_001/SMASHHIT_001-17.html",
+        "displayLink": "www.cs.ubc.ca",
+        "snippet": "Armand Van Helden Entra Mi Cassa ... MusicBrainz MusicDNS. Song Artist: \nArmand Van Helden. Song Title: Entra Mi Casa ...",
+        "htmlSnippet": "Armand Van Helden Entra Mi Cassa ... MusicBrainz MusicDNS. Song Artist: <br>\nArmand Van Helden. Song Title: Entra <b>Mi Casa</b>&nbsp;...",
+        "cacheId": "IFXcBmTVdqsJ",
+        "formattedUrl": "https://www.cs.ubc.ca/~davet/music/.../SMASHHIT_001-17.html",
+        "htmlFormattedUrl": "https://www.cs.ubc.ca/~davet/music/.../SMASHHIT_001-17.html"
+    }, {
+        "kind": "customsearch#result",
+        "title": "City High Featuring Eve :: Caramel [RADIO202_01A-08]",
+        "htmlTitle": "City High Featuring Eve :: Caramel [RADIO202_01A-08]",
+        "link": "https://www.cs.ubc.ca/~davet/music/track/RADIO202_01A/RADIO202_01A-08.html",
+        "displayLink": "www.cs.ubc.ca",
+        "snippet": "Baby girl don't you know you're a star. See we could take a little trip to mi casa. \nSpend the night popping cris in the hot tub. See I ain't never seen no girl like you",
+        "htmlSnippet": "Baby girl don&#39;t you know you&#39;re a star. See we could take a little trip to <b>mi casa</b>. <br>\nSpend the night popping cris in the hot tub. See I ain&#39;t never seen no girl like you",
+        "cacheId": "Obyzr8qn2YcJ",
+        "formattedUrl": "https://www.cs.ubc.ca/~davet/music/.../RADIO202_01A-08.html",
+        "htmlFormattedUrl": "https://www.cs.ubc.ca/~davet/music/.../RADIO202_01A-08.html"
+    }, {
+        "kind": "customsearch#result",
+        "title": "Shakira Featuring Wyclef :: Bamboo - Hips Don't Lie ...",
+        "htmlTitle": "Shakira Featuring Wyclef :: Bamboo - Hips Don&#39;t Lie <b>...</b>",
+        "link": "https://www.cs.ubc.ca/~davet/music/track/DTRANDOM_015/DTRANDOM_015-05.html",
+        "displayLink": "www.cs.ubc.ca",
+        "snippet": "Shakira, Shakira I never really knew that she could dance like this. She makes a \nman wants to speak Spanish Como se llama, si, bonita, si, mi casa, su casa",
+        "htmlSnippet": "Shakira, Shakira I never really knew that she could dance like this. She makes a <br>\nman wants to speak Spanish Como se llama, si, bonita, si, <b>mi casa</b>, su casa",
+        "cacheId": "0fYSeNgDVcQJ",
+        "formattedUrl": "https://www.cs.ubc.ca/~davet/music/.../DTRANDOM_015-05.html",
+        "htmlFormattedUrl": "https://www.cs.ubc.ca/~davet/music/.../DTRANDOM_015-05.html"
+    }, {
+        "kind": "customsearch#result",
+        "title": "Key Frame Extraction from Motion Capture Data by Curve Saliency",
+        "htmlTitle": "Key Frame Extraction from Motion Capture Data by Curve Saliency",
+        "link": "http://www.cs.rpi.edu/~bulute/casa.pdf",
+        "displayLink": "www.cs.rpi.edu",
+        "snippet": "fki+mi. (5). The situations illustrated in (4) and (5) result the selection of frame fki+\nt as keyframe. Figure 5 shows the local minimum and maximums on a sample.",
+        "htmlSnippet": "fki+<b>mi</b>. (5). The situations illustrated in (4) and (5) result the selection of frame fki+<br>\nt as keyframe. Figure 5 shows the local minimum and maximums on a sample.",
+        "cacheId": "KPyHfhmlcSsJ",
+        "mime": "application/pdf",
+        "fileFormat": "PDF/Adobe Acrobat",
+        "formattedUrl": "www.cs.rpi.edu/~bulute/casa.pdf",
+        "htmlFormattedUrl": "www.cs.rpi.edu/~bulute/<b>casa</b>.pdf",
+        "pagemap": {
+            "cse_image": [{
+                "src": "x-raw-image:///3141fa9243b8a033eccf56c15d56a9a5c6ee33e0d4cfcf250183f69440fed117"
+            }],
+            "cse_thumbnail": [{
+                "width": "267",
+                "height": "189",
+                "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5DAFEGWyM5v_4opliB_5kY8D3zvGyr2gw9WJ-harUNqLuhPFMW3nMmNpQ"
+            }],
+            "metatags": [{
+                "producer": "GPL Ghostscript 8.15",
+                "creationdate": "D:20071020162016",
+                "moddate": "D:20071020162016",
+                "title": "Microsoft Word - bulut_capin_keyframe_extraction.doc",
+                "creator": "PScript5.dll Version 5.2",
+                "author": "eyup"
+            }]
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Song Title :: E (Music Database :: Dave Tompkins)",
+        "htmlTitle": "Song Title :: E (Music Database :: Dave Tompkins)",
+        "link": "https://www.cs.ubc.ca/~davet/music/title/E.html",
+        "displayLink": "www.cs.ubc.ca",
+        "snippet": "Armand Van Helden Featuring Mita, Entra Mi Casa, 4:39, 136.5 · 2001 · Dance \n2000s · CLUBANTH_201-05, (details...) Armand Van Helden, Entra Mi Cassa ...",
+        "htmlSnippet": "Armand Van Helden Featuring Mita, Entra <b>Mi Casa</b>, 4:39, 136.5 &middot; 2001 &middot; Dance <br>\n2000s &middot; CLUBANTH_201-05, (details...) Armand Van Helden, Entra Mi Cassa&nbsp;...",
+        "cacheId": "OaVUuKIbjEQJ",
+        "formattedUrl": "https://www.cs.ubc.ca/~davet/music/title/E.html",
+        "htmlFormattedUrl": "https://www.cs.ubc.ca/~davet/music/title/E.html"
+    }, {
+        "kind": "customsearch#result",
+        "title": "this set",
+        "htmlTitle": "this set",
+        "link": "http://www.cis.upenn.edu/~cdmurphy/cis350/code/300k_tweets.txt",
+        "displayLink": "www.cis.upenn.edu",
+        "snippet": "Y mi mama piensa que metí a otra chica a mi casa tssss #LaCrudaVerdad [\n43.866106809999998, -79.533770270000005] 4 2011-09-09 03:04:11 Yes tsn ...",
+        "htmlSnippet": "Y mi mama piensa que metí a otra chica a <b>mi casa</b> tssss #LaCrudaVerdad [<br>\n43.866106809999998, -79.533770270000005] 4 2011-09-09 03:04:11 Yes tsn&nbsp;...",
+        "mime": "text/plain",
+        "formattedUrl": "www.cis.upenn.edu/~cdmurphy/cis350/code/300k_tweets.txt",
+        "htmlFormattedUrl": "www.cis.upenn.edu/~cdmurphy/cis350/code/300k_tweets.txt"
+    }, {
+        "kind": "customsearch#result",
+        "title": "The Cardenio Project (correción final de Cecilia Criado)",
+        "htmlTitle": "The Cardenio Project (correción final de Cecilia Criado)",
+        "link": "http://www.fas.harvard.edu/~cardenio/spain/resources/script%202012(Spanish).pdf",
+        "displayLink": "www.fas.harvard.edu",
+        "snippet": "¿Qué evitándote? No tiene nada que ver contigo. Tengo que trabajar. Es mi \ntrabajo. Yo trabajo en casa. Mi oficina es mi casa. ¿Tan difícil es de comprender?",
+        "htmlSnippet": "¿Qué evitándote? No tiene nada que ver contigo. Tengo que trabajar. Es mi <br>\ntrabajo. Yo trabajo en casa. Mi oficina es <b>mi casa</b>. ¿Tan difícil es de comprender?",
+        "cacheId": "1EXG9bxOBTsJ",
+        "mime": "application/pdf",
+        "fileFormat": "PDF/Adobe Acrobat",
+        "formattedUrl": "www.fas.harvard.edu/~cardenio/spain/.../script%202012(Spanish).pdf",
+        "htmlFormattedUrl": "www.fas.harvard.edu/~cardenio/spain/.../script%202012(Spanish).pdf",
+        "pagemap": {
+            "metatags": [{
+                "title": "The Cardenio Project (correción final de Cecilia Criado)",
+                "author": "Jesús  Eguía Armenteros",
+                "creator": "Pages",
+                "producer": "Mac OS X 10.5.8 Quartz PDFContext",
+                "creationdate": "D:20120210172839Z00'00'",
+                "moddate": "D:20120210172839Z00'00'"
+            }]
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "EL PRIMER LIBRO DE NEFI SU REINADO Y MINISTERIO n elato ...",
+        "htmlTitle": "EL PRIMER LIBRO DE NEFI SU REINADO Y MINISTERIO n elato <b>...</b>",
+        "link": "http://www.cs.jhu.edu/~jag/mormon/utf8/spanish.utf8.txt",
+        "displaLyink": "www.cs.jhu.edu",
+        "snippet": "7 No obstante, seguí adelante, y al acercarme a la casa de Labán vi a un hombre\n, y éste había caído al suelo delante de mí, porque estaba ebrio de vino.",
+        "htmlSnippet": "7 No obstante, seguí adelante, y al acercarme a la <b>casa</b> de Labán vi a un hombre<br>\n, y éste había caído al suelo delante de <b>mí</b>, porque estaba ebrio de vino.",
+        "mime": "text/plain",
+        "formattedUrl": "www.cs.jhu.edu/~jag/mormon/utf8/spanish.utf8.txt",
+        "htmlFormattedUrl": "www.cs.jhu.edu/~jag/mormon/utf8/spanish.utf8.txt"
+    }, {
+        "kind": "customsearch#result",
+        "title": "Chapter 17 TOPIC in Warao 1. Introduction Warao is “a language ...",
+        "htmlTitle": "Chapter 17 TOPIC in Warao 1. Introduction Warao is “a language <b>...</b>",
+        "link": "http://www.owlnet.rice.edu/~pwd/sands17.pdf",
+        "displayLink": "www.owlnet.rice.edu",
+        "snippet": "(5b) and (5c) seem not to.7 Du 'happen' and mi 'see' appear to be actualized, and \nthe ...... 'Después de mucho correr llegaron a la casa de Wauta'. 26 Out of 111 ...",
+        "htmlSnippet": "(5b) and (5c) seem not to.7 Du &#39;happen&#39; and <b>mi</b> &#39;see&#39; appear to be actualized, and <br>\nthe ...... &#39;Después de mucho correr llegaron a la <b>casa</b> de Wauta&#39;. 26 Out of 111&nbsp;...",
+        "cacheId": "RJJ_q9quIrcJ",
+        "mime": "application/pdf",
+        "fileFormat": "PDF/Adobe Acrobat",
+        "formattedUrl": "www.owlnet.rice.edu/~pwd/sands17.pdf",
+        "htmlFormattedUrl": "www.owlnet.rice.edu/~pwd/sands17.pdf",
+        "pagemap": {
+            "metatags": [{
+                "creator": "Corel WordPerfect 3.5.1",
+                "creationdate": "D:20090315160851",
+                "producer": "[ClibPDF Library 2.02-r1-1] PrintToPDF 2.4.4",
+                "author": "Philip W Davis",
+                "title": "Thanks!"
+            }]
+        }
+    }]
+}
