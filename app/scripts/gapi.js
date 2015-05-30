@@ -28,7 +28,7 @@ define('gapi', [], function() {
         search: function(query, type) {
             this.currentQuery = this._urlencode(query);
             if (type === 'image') {
-                this.currentQuery += '&searchType=image&fileType=jpg&imgSize=small&alt=json';
+                this.currentQuery += '&searchType=image&alt=json';
             }
             return this.send(this.currentQuery);
         },
@@ -51,7 +51,7 @@ define('gapi', [], function() {
                 //req.open('GET', 'http://localhost:9000/app/google_search_result_images.json', true);
                 req.onreadystatechange = function() {
                     if (req.readyState === 4) {
-                        console.log(req.responseText);
+                        //console.log(req.responseText);
                         if (req.status === 200) {
                             resolve(req.responseText);
                         } else if (req.status === 404) {

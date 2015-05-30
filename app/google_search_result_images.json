@@ -5,47 +5,221 @@
         "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
     },
     "queries": {
+        "nextPage": [{
+            "title": "Google Custom Search - pitbull",
+            "totalResults": "21000000",
+            "searchTerms": "pitbull",
+            "count": 10,
+            "startIndex": 11,
+            "inputEncoding": "utf8",
+            "outputEncoding": "utf8",
+            "safe": "off",
+            "cx": "014892851322095714376:xjjrjz4x4n8",
+            "searchType": "image"
+        }],
         "request": [{
-            "title": "Google Custom Search - apples",
-            "totalResults": "1",
-            "searchTerms": "apples",
-            "count": 1,
+            "title": "Google Custom Search - pitbull",
+            "totalResults": "21000000",
+            "searchTerms": "pitbull",
+            "count": 10,
             "startIndex": 1,
             "inputEncoding": "utf8",
             "outputEncoding": "utf8",
             "safe": "off",
             "cx": "014892851322095714376:xjjrjz4x4n8",
-            "fileType": "jpg",
-            "searchType": "image",
-            "imgSize": "small"
+            "searchType": "image"
         }]
     },
     "context": {
         "title": "Google"
     },
     "searchInformation": {
-        "searchTime": 0.370326,
-        "formattedSearchTime": "0.37",
-        "totalResults": "1",
-        "formattedTotalResults": "1"
+        "searchTime": 0.298424,
+        "formattedSearchTime": "0.30",
+        "totalResults": "21000000",
+        "formattedTotalResults": "21,000,000"
     },
     "items": [{
         "kind": "customsearch#result",
-        "title": "Thanksgiving Recipes from Google",
-        "htmlTitle": "Thanksgiving Recipes from Google",
-        "link": "http://www.google.com/landing/thanksgiving/img/thumb_turkey.jpg",
-        "displayLink": "www.google.com",
-        "snippet": "Herb and Apple Stuffing",
-        "htmlSnippet": "Herb and <b>Apple</b> Stuffing",
+        "title": "Pitbull (rapper) - Wikipedia, the free encyclopedia",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e (rapper) - Wikipedia, the free encyclopedia",
+        "link": "http://upload.wikimedia.org/wikipedia/commons/c/c2/Pitbull_the_rapper_in_Sydney,_Australia_(2012).jpg",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "Pitbull the rapper in Sydney,",
+        "htmlSnippet": "\u003cb\u003ePitbull\u003c/b\u003e the rapper in Sydney,",
         "mime": "image/jpeg",
         "image": {
-            "contextLink": "http://www.google.com/landing/thanksgiving/",
-            "height": 100,
-            "width": 100,
-            "byteSize": 4772,
-            "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLkUkLcY8E1ayWjZlA9SyvKW-Fk1myFMbLKbes_tSP76b14L-HboH_FA",
-            "thumbnailHeight": 82,
-            "thumbnailWidth": 82
+            "contextLink": "http://en.wikipedia.org/wiki/Pitbull_(rapper)",
+            "height": 1113,
+            "width": 876,
+            "byteSize": 640905,
+            "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcWwXFE5HhtZ0LKjhepEtjMScBAKBLU8wXBsSmDxvO8lg04uV-0HcuJN5b",
+            "thumbnailHeight": 150,
+            "thumbnailWidth": 118
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull Starring In Two Reality TV Series | Deadline",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e Starring In Two Reality TV Series | Deadline",
+        "link": "https://pmcdeadline2.files.wordpress.com/2014/10/pitbull.png?w=446&h=299&crop=1",
+        "displayLink": "deadline.com",
+        "snippet": "pitbull",
+        "htmlSnippet": "\u003cb\u003epitbull\u003c/b\u003e",
+        "mime": "image/png",
+        "fileFormat": "Image Document",
+        "image": {
+            "contextLink": "http://deadline.com/2014/10/pitbull-reality-tv-series-the-lyfe-harvey-weinstein-863748/",
+            "height": 299,
+            "width": 446,
+            "byteSize": 112577,
+            "thumbnailLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPgZor4xGttV0W19stL0uJ4IiAL41IOGSgzTiIseDco9dcUJqJ1HFfVYk",
+            "thumbnailHeight": 85,
+            "thumbnailWidth": 127
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull 'Fireball' Official Video to Feature Jenna Marbles, Other ...",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e &#39;Fireball&#39; Official Video to Feature Jenna Marbles, Other \u003cb\u003e...\u003c/b\u003e",
+        "link": "https://pmcvariety.files.wordpress.com/2014/05/pitbull-new-years-eve.jpg?w=670&h=377&crop=1",
+        "displayLink": "variety.com",
+        "snippet": "pitbull-new-years-eve",
+        "htmlSnippet": "\u003cb\u003epitbull\u003c/b\u003e-new-years-eve",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://variety.com/2014/digital/news/pitbull-fireball-official-video-to-feature-jenna-marbles-other-digital-stars-exclusive-1201284816/",
+            "height": 377,
+            "width": 670,
+            "byteSize": 24129,
+            "thumbnailLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSy5OEorMnX3UUspakZmgk0OsygYmEVfM0AEXS9O4WEP7BV1H5sgupo5XJr",
+            "thumbnailHeight": 78,
+            "thumbnailWidth": 138
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull (rapper) - Wikipedia, the free encyclopedia",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e (rapper) - Wikipedia, the free encyclopedia",
+        "link": "http://upload.wikimedia.org/wikipedia/commons/9/90/Pitbull_the_rapper_in_performance_(2011).jpg",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "Pitbull performing in 2011",
+        "htmlSnippet": "\u003cb\u003ePitbull\u003c/b\u003e performing in 2011",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://en.wikipedia.org/wiki/Pitbull_(rapper)",
+            "height": 2592,
+            "width": 2196,
+            "byteSize": 7211344,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOg2O16a5rLxuBEHGu7jo3I_lGpzrY0VVBbrMHuA3WUMP459pjwM0lAh7",
+            "thumbnailHeight": 150,
+            "thumbnailWidth": 127
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull: I Want to 'Make History' in 2015 - New Year's, Music News ...",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e: I Want to &#39;Make History&#39; in 2015 - New Year&#39;s, Music News \u003cb\u003e...\u003c/b\u003e",
+        "link": "http://img2.timeinc.net/people/i/2015/news/150112/pitbull-768.jpg",
+        "displayLink": "www.people.com",
+        "snippet": "Pitbull",
+        "htmlSnippet": "\u003cb\u003ePitbull\u003c/b\u003e",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://www.people.com/article/pitbull-new-years-resolution-make-history",
+            "height": 1024,
+            "width": 768,
+            "byteSize": 117972,
+            "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQweo9SU0AkZXdHPGuHTL88SoK9jJumnwks3ImJ64G5_eq8vceWMpu2_4s",
+            "thumbnailHeight": 150,
+            "thumbnailWidth": 113
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pit bull - Wikipedia, the free encyclopedia",
+        "htmlTitle": "\u003cb\u003ePit bull\u003c/b\u003e - Wikipedia, the free encyclopedia",
+        "link": "http://upload.wikimedia.org/wikipedia/commons/5/57/Amstaff_Female_Nala.PNG",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "Pit Bull (American",
+        "htmlSnippet": "\u003cb\u003ePit Bull\u003c/b\u003e (American",
+        "mime": "image/png",
+        "fileFormat": "Image Document",
+        "image": {
+            "contextLink": "http://en.wikipedia.org/wiki/Pit_bull",
+            "height": 1136,
+            "width": 640,
+            "byteSize": 1791477,
+            "thumbnailLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROS53qC5mFJPWS7ofjRcbv92GAZ6FQiOpwhKj7T0QRUzhVuysxKfZHQbXl",
+            "thumbnailHeight": 150,
+            "thumbnailWidth": 85
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull Addresses Jay-Z & Beyonce's Cuba Trip On 'Open Letter ...",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e Addresses Jay-Z &amp; Beyonce&#39;s Cuba Trip On &#39;Open Letter \u003cb\u003e...\u003c/b\u003e",
+        "link": "http://www.billboard.com/files/styles/promo_650/public/stylus/500573-pitbull_Ace-Buhr_617_409.jpg?itok=I-hqGhZO",
+        "displayLink": "www.billboard.com",
+        "snippet": "Pitbull Crosses Over with Two",
+        "htmlSnippet": "\u003cb\u003ePitbull\u003c/b\u003e Crosses Over with Two",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://www.billboard.com/articles/columns/the-juice/1557472/pitbull-addresses-jay-z-beyonces-cuba-trip-on-open-letter",
+            "height": 409,
+            "width": 617,
+            "byteSize": 17930,
+            "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd2iz1a81e4qxSUfd4aH2iSaxOOp7KwkRRx5lo-PTz6umxUt_k1pGKeys",
+            "thumbnailHeight": 90,
+            "thumbnailWidth": 136
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull Dog New Wallpapers | Pitbull Dog Pictures Free Download ...",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e Dog New Wallpapers | \u003cb\u003ePitbull\u003c/b\u003e Dog Pictures Free Download \u003cb\u003e...\u003c/b\u003e",
+        "link": "http://www.hdwallpaperscool.com/wp-content/uploads/2014/02/Pitbull-dog-pitbull-wallpapers-pictures-new-fresh-images-of-pitbull-dog-free-download.jpg",
+        "displayLink": "www.hdwallpaperscool.com",
+        "snippet": "Pitbull dog pitbull wallpapers",
+        "htmlSnippet": "\u003cb\u003ePitbull\u003c/b\u003e dog \u003cb\u003epitbull\u003c/b\u003e wallpapers",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://www.hdwallpaperscool.com/pitbull-dog-new-wallpapers/",
+            "height": 1223,
+            "width": 1201,
+            "byteSize": 187812,
+            "thumbnailLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtP4pze2pKv1Bqr1sxdHhSLBU9rhNQmq7xIgBJn1dQ1fGhDh9tEKbe-G7M",
+            "thumbnailHeight": 150,
+            "thumbnailWidth": 147
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull | The Official Pitbull Site",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e | The Official \u003cb\u003ePitbull\u003c/b\u003e Site",
+        "link": "http://www.pitbullmusic.com/sites/pitbull/files/imagecache/pitbull_album_285x285/Pitbull%20Ft%20Jim%20Jones%20-%20Sticky%20Icky.jpeg",
+        "displayLink": "www.pitbullmusic.com",
+        "snippet": "Digital Album",
+        "htmlSnippet": "Digital Album",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "http://www.pitbullmusic.com/us",
+            "height": 285,
+            "width": 285,
+            "byteSize": 11951,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9v9FxlBLr5o5NOorgQDTVIY0HsEAWBxHnoEzRmrm6FvDS9jNWn5a_2zk",
+            "thumbnailHeight": 115,
+            "thumbnailWidth": 115
+        }
+    }, {
+        "kind": "customsearch#result",
+        "title": "Pitbull | Billboard",
+        "htmlTitle": "\u003cb\u003ePitbull\u003c/b\u003e | Billboard",
+        "link": "http://www.billboard.com/files/styles/promo_650/public/media/pitbull-host-ama-2014-billboard-650.jpg?itok=dDJ5AOyi",
+        "displayLink": "www.billboard.com",
+        "snippet": "Charles Chavez&#039;s Latium",
+        "htmlSnippet": "Charles Chavez&amp;#039;s Latium",
+        "mime": "image/jpeg",
+        "image": {
+            "contextLink": "https://www.billboard.com/artist/1490081/pitbull",
+            "height": 430,
+            "width": 650,
+            "byteSize": 124436,
+            "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi0IAZd1jkETlykq1FIjvQIbzbI3E_qWRHYMHQ_0jB_Eau3o7zPpFoCFk",
+            "thumbnailHeight": 91,
+            "thumbnailWidth": 137
         }
     }]
 }

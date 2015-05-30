@@ -1,7 +1,6 @@
 'use strict';
 /*global define*/
 
-
 define('ui', ['gapi'], function(GAPI) {
 
     var UI = {
@@ -10,14 +9,13 @@ define('ui', ['gapi'], function(GAPI) {
             searchInput: document.querySelector('#searchInput'),
             searchButton: document.querySelector('#searchButton'),
             searchImages: document.querySelector('#cat_link_img'),
+            searchWeb: document.querySelector('#cat_link_web'),
             searchMorphButton: document.querySelector('#searchMorphButton'),
             mainHeaderContainer: document.querySelector('.main_header'),
             searchContainer: document.querySelector('.search_container'),
-            headerResultsContainer: document.querySelector('.header_results_container'),
-            webResultsContainer: document.querySelector('.web_results_container'),
-            webResultsItems: document.querySelector('.web_results'),
-            imageResultsContainer: document.querySelector('.images_results_container'),
-            imageResultsItems: document.querySelector('.image_results'),
+            resultsContainer: document.querySelector('.results_container'),
+            webResults: document.querySelector('.web_results'),
+            imageResults: document.querySelector('.image_results'),
             paginator: document.querySelector('.paginator'),
             prevPage: document.querySelector('#prevPage'),
             nextPage: document.querySelector('#nextPage')
@@ -57,18 +55,10 @@ define('ui', ['gapi'], function(GAPI) {
                                 ref.createImagesResultItem(element);
                             } else {
                                 ref.createWebResultItem(element);
-
                             }
                         });
-                        ref.show(ref.components.headerResultsContainer);
-                        if (type === 'image') {
-                            ref.show(ref.components.imageResultsContainer);
-                            ref.hide(ref.components.webResultsContainer);
-                        } else {
-                            ref.show(ref.components.webResultsContainer);
-                            ref.hide(ref.components.imageResultsContainer);
-                        }
-                        ref.show(ref.components.paginator);
+                        ref.show(ref.components.resultsContainer);
+                        ref.showTypeOfResults(type);
                     })
                     .catch(function(responseError) {
                         var responseErrorParsed = JSON.parse(responseError);
@@ -90,6 +80,7 @@ define('ui', ['gapi'], function(GAPI) {
                 if (!searchText.length) {
                     return false;
                 }
+
                 GAPI.nextPage()
                     .then(function(response) {
                         var responseParsed = JSON.parse(response);
@@ -133,10 +124,8 @@ define('ui', ['gapi'], function(GAPI) {
                 } else {
                     ref.components.searchContainer.classList.remove('morph');
                     ref.components.mainHeaderContainer.classList.remove('morph');
-                    ref.hide(ref.components.headerResultsContainer);
-                    ref.hide(ref.components.webResultsContainer);
-                    ref.hide(ref.components.imageResultsContainer);
-                    ref.hide(ref.components.paginator);
+                    //ref.hide(ref.components.headerResultsContainer);
+                    //ref.hide(ref.components.resultsContainer);
                 }
             };
             this.addListener(this.components.searchInput, 'input', function() {
@@ -145,6 +134,10 @@ define('ui', ['gapi'], function(GAPI) {
 
             this.addListener(this.components.searchImages, 'click', function() {
                 _searchProcess('image');
+            });
+
+            this.addListener(this.components.searchWeb, 'click', function() {
+                _searchProcess();
             });
 
             this.addListener(document, 'keydown', function(event) {
@@ -172,15 +165,15 @@ define('ui', ['gapi'], function(GAPI) {
             return el;
         },
         refreshResults: function() {
-            while (this.components.webResultsItems.firstChild) {
-                this.components.webResultsItems.removeChild(this.components.webResultsItems.firstChild);
+            while (this.components.webResults.firstChild) {
+                this.components.webResults.removeChild(this.components.webResults.firstChild);
             }
-            while (this.components.imageResultsItems.firstChild) {
-                this.components.imageResultsItems.removeChild(this.components.imageResultsItems.firstChild);
+            while (this.components.imageResults.firstChild) {
+                this.components.imageResults.removeChild(this.components.imageResults.firstChild);
             }
         },
         createWebResultItem: function(data) {
-            var webResultsItem = this._createElement('div', null, this.components.webResultsItems);
+            var webResultsItem = this._createElement('div', null, this.components.webResults);
             webResultsItem.classList.add('web_result');
             var fEl = this._createElement('span', null, webResultsItem);
             fEl.insertAdjacentHTML('afterend', '<p class="description">' + data.htmlSnippet + '</p>');
@@ -188,30 +181,9 @@ define('ui', ['gapi'], function(GAPI) {
             fEl.insertAdjacentHTML('afterend', '<img src="app/images/ArrowGreen.png" />');
             fEl.insertAdjacentHTML('afterend', '<p class="cont">' + data.htmlFormattedUrl + '</p>');
             fEl.insertAdjacentHTML('afterend', '<p class="title"><a href="' + data.link + '">' + data.title + '</a></p>');
-
-            // {
-            //     cacheId: "YbLXEdOjqkIJ"
-            //     displayLink: "www.cs.ubc.ca"
-            //     formattedUrl: "https://www.cs.ubc.ca/~davet/music/.../CLUBANTH_201-05.html"
-            //     htmlFormattedUrl: "https://www.cs.ubc.ca/~davet/music/.../CLUBANTH_201-05.html"
-            //     htmlSnippet: "Song Information. Song Artist(s): Armand Van Helden Featuring Mita. Song Title: <br>↵Entra <b>Mi Casa</b> &middot; Year: 2001. Album Information. Album: Club Anthems 2001."
-            //     htmlTitle: "Armand Van Helden Featuring Mita :: Entra <b>Mi Casa</b> <b>...</b>"
-            //     kind: "customsearch#result"
-            //     link: "https://www.cs.ubc.ca/~davet/music/track/CLUBANTH_201/CLUBANTH_201-05.html"
-            //     snippet: "Song Information. Song Artist(s): Armand Van Helden Featuring Mita. Song Title: ↵Entra Mi Casa · Year: 2001. Album Information. Album: Club Anthems 2001."
-            //     title: "Armand Van Helden Featuring Mita :: Entra Mi Casa ..."
-            // }
-
-            // <div class="web_result">
-            //     < p class = "title" > < a href = "" > With zero coding experience, artist building 180 webpages... < /a></p >
-            //     <p class="description">arstechnica.com/.../with-zero-coding-experience-artist...</p>
-            //     <img src="app/images/ArrowGreen.png" />
-            //     <p class="trad"><a href="">Traduire cette page</a></p>
-            //     <p class="cont">117 days ago, having never done any programming in her life, Jennifer Dewalt <strong>built</strong> her first <strong>webpage</strong>. The next day, she <strong>built</strong> another, and she ...</p>
-            // </div>
         },
         createImagesResultItem: function(data) {
-            var imageResultsItem = this._createElement('a', null, this.components.imageResultsItems);
+            var imageResultsItem = this._createElement('a', null, this.components.imageResults);
             imageResultsItem.classList.add('image_result');
             imageResultsItem.classList.add('image_link');
             imageResultsItem.href = data.link;
@@ -219,9 +191,10 @@ define('ui', ['gapi'], function(GAPI) {
             fEl.classList.add('image_container');
             fEl.style.width = data.image.thumbnailWidth + 'px';
             fEl.style.height = data.image.thumbnailHeight + 'px';
-            fEl.style.backgroundImage = 'url(' + data.link + ')';
+            fEl.style.backgroundImage = 'url(' + data.image.thumbnailLink + ')';
 
             var tooltip = this._createElement('span', null, fEl);
+            tooltip.classList.add('tooltip');
             tooltip.innerHTML = data.image.width + ' x ' + data.image.width + ' - ' + data.displayLink;
 
             // "items": [{
@@ -244,11 +217,15 @@ define('ui', ['gapi'], function(GAPI) {
             //     }
             // }]
 
-            // <div class="image_result">
-            //     <a href="" > With zero coding experience, artist building 180 webpages...
-            //     <p class="description">arstechnica.com/.../with-zero-coding-experience-artist...</p>
-            //     </a>
-            // </div>
+        },
+        showTypeOfResults: function(type) {
+            if (type === 'image') {
+                this.hide(this.components.webResults);
+                this.show(this.components.imageResults);
+            } else {
+                this.hide(this.components.imageResults);
+                this.show(this.components.webResults);
+            }
         }
 
     };

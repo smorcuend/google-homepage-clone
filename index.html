@@ -42,31 +42,31 @@
             <a href="#">spanish</a>
         </div>
     </main>
-    <header class="header_results_container hidden">
-        <!-- #categories -->
-        <div id="categories">
-            <div id="cat-links">
-                <a class="clink active" href="#">Web</a>
-                <a id="cat_link_img" class="clink" href="#">Images</a>
-                <a class="clink" href="#">Videos</a>
-                <a class="clink" href="#">Shopping</a>
-                <a class="clink" href="#">News</a>
-                <a class="clink" href="#">More<span class="mn-dwn-arw"></span></a>
-                <a class="clink" href="#">Search tools</a>
+    <div class="results_container hidden">
+        <header class="header_results_container">
+            <!-- #categories -->
+            <div id="categories">
+                <div id="cat-links">
+                    <a id="cat_link_web" class="clink active" href="#">Web</a>
+                    <a id="cat_link_img" class="clink" href="#">Images</a>
+                    <a class="clink" href="#">Videos</a>
+                    <a class="clink" href="#">Shopping</a>
+                    <a class="clink" href="#">News</a>
+                    <a class="clink" href="#">More<span class="mn-dwn-arw"></span></a>
+                    <a class="clink" href="#">Search tools</a>
+                </div>
             </div>
+        </header>
+        <div class="main_results_container">
+            <p id="time_web" class="time"></p>
+            <div class="web_results"></div>
+            <div class="image_results"></div>
         </div>
-        <p id="time_web" class="time"></p>
-    </header>
-    <div class="results web_results_container hidden">
-        <div class="web_results"></div>
+        <section class="paginator">
+            <button id="prevPage">Previous page</button>
+            <button id="nextPage">Next Page</button>
+        </section>
     </div>
-    <div class="results images_results_container hidden">
-        <div class="image_results"></div>
-    </div>
-    <section class="paginator hidden">
-        <button id="prevPage">Previous page</button>
-        <button id="nextPage">Next Page</button>
-    </section>
     <footer role="footer">
         <div class="left">
             <a href="#">Advertising</a>

@@ -1,9 +1,37 @@
+/* Reset styles */
+
 body {
     margin: 0 0;
     width: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Common styles */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+/*Main elements*/
 
 .main_header {
     height: 30px;
@@ -294,14 +322,6 @@ form[role="search"] .voice {
     margin-right: 3px;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .languages a:visited {
     color: rgb(0, 0, 238);
 }
@@ -333,14 +353,6 @@ footer a:visited {
     color: #676767;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 footer .left {
     margin-left: 17px;
 }
@@ -348,176 +360,7 @@ footer .left {
 footer .right {
     margin-right: 16px;
 }
-
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.image_results {
-    display: inline-flex;
-}
-
-.web_results,
-.image_results {
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-.image_result {
-    margin: 10px;
-}
-
-.image_container {
-    position: relative;
-}
-
-.image_result span {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-}
-
-.image_result:hover span {
-    opacity: 1;
-    background-color: #777;
-}
-
-.web_result img {
-    display: inline-block;
-    margin-left: 7px;
-    margin-right: 7px;
-}
-
-.web_result .title {
-    font-size: 1rem;
-    margin-bottom: 0;
-}
-
-.web_result .cont {
-    display: inline-block;
-    color: #006621;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 1.1em;
-}
-
-.web_result .trad {
-    font-size: 1.1em;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.web_result .description {
-    margin: 0 auto;
-}
-
-.time {
-    margin: 0 auto;
-    max-width: 80%;
-    line-height: 43px;
-    color: #808080;
-    font-family: arial, sans-serif;
-    font-size: small;
-}
-
-.paginator {
-    margin: 2em auto;
-    text-align: center;
-    margin-bottom: 6em;
-}
-
-#google img {
-    display: block;
-    margin-top: 20px;
-    margin-left: 315px;
-}
-
-#google ul {
-    margin-left: 342px;
-}
-
-#google li {
-    display: inline;
-    margin-left: 7.5px;
-}
-
-#google a {
-    text-decoration: none;
-    color: #1a0dab;
-    font-size: : small;
-}
-
-#google a:hover {
-    text-decoration: underline;
-}
-
-#next {
-    position: relative;
-    left: 600px;
-    top: -20px;
-    color: #1a0dab;
-    font-weight: bold;
-    font-size: small;
-    font-family: arial, sans-serif;
-}
-
-#toprow {
-    /* includes Google pic, search bar, microphone pic, search button with magnifying glass
-     image, the 3 by 3 grid 'Apps' grid, and the Sign in button! */
-    
-    background: #f1f1f1;
-    height: 60px;
-    width: 100%;
-    min-width: 995px;
-}
-
-#left-controls {
-    /* Includes Google pic, search bar, microphone pic, search button */
-    
-    position: relative;
-    /* set context for absolute positioned elts */
-}
-
-#left-controls a {
-    /* The Google image, its a link too */
-    
-    position: absolute;
-    top: 16px;
-    left: 15px;
-}
-
-#search-controls {
-    /* The input field, microphone pic, and search button */
-    
-    position: absolute;
-    top: 15px;
-    left: 127px;
-    width: 60%;
-    max-width: 596px;
-    height: 28px;
-    background: white;
-    border: 1px solid #ccc;
-}
-
-#search-controls input {
-    padding: 5px 9px 0;
-    border: none;
-    height: auto;
-    width: 100%;
-    font: 16px arial, sans-serif;
-    color: #222;
-    background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D);
-    background-color: transparent;
-    z-index: 6;
-    left: 0px;
-    outline: none;
-    background-position: initial initial;
-    background-repeat: initial initial;
-}
+/* Results header */
 
 #categories {
     width: 100%;
@@ -563,12 +406,9 @@ footer .right {
     /* The 'Search Tools' link */
     
     margin-left: 16px;
-    /* nudge it over */
 }
 
 .clink:link {
-    /* why fails?  had to globally set all <a> to color at top! */
-    
     color: #777;
 }
 
@@ -576,68 +416,103 @@ footer .right {
     color: black;
 }
 
-.mn-dwn-arw {
-    /* The down arrow, next to More link */
-    
-    position: absolute;
-    border-color: #909090 transparent;
-    border-style: solid;
-    border-width: 4px 4px 0 4px;
-    margin-left: 4px;
-    top: 15%;
+.time {
+    width: 600px;
+    margin: 0 auto;
+    line-height: 43px;
+    color: #808080;
+    font-family: arial, sans-serif;
+    font-size: small;
+}
+/* Results styles */
+
+.results_container {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: inherit;
 }
 
-.mn-dwn-arw:hover {
-    /* TODO */
-    
-    color: black;
+.image_results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+/* Image results styles */
 
-#right-cog {
+.image_result {
+    margin: 6px;
+    align-self: center;
     position: relative;
-    right: 28px;
-    top: -23px;
-    width: 70px;
-    height: 27px;
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-    text-align: center;
 }
 
-#right-cog:hover {
-    border: 1px solid #c6c6c6;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 0.0s;
-    transition: all 0.0s;
+.image_result .tooltip {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(51, 51, 51, 0.8);
+    width: inherit;
+    color: white;
+    margin-left: 0;
+    padding: 2px 4px;
+    box-sizing: border-box;
 }
 
-#ab_opt_icon {
-    background-position: -42px -259px;
-    height: 17px;
-    margin-top: 4px;
-    width: 17px;
+.image_result:hover .tooltip {
+    opacity: 1;
+}
+/* Web results styles */
+
+.web_results {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.ab_icon {
-    background: url('sprites2.png') no-repeat;
+.web_result img {
     display: inline-block;
-    opacity: 0.667;
-    vertical-align: middle;
+    margin-left: 7px;
+    margin-right: 7px;
 }
-/*
-.ab_icon:hover {
-  opacity: 1.0;
-}
-*/
-/*
- * Search Results!
- */
 
-#search_results {
-    margin-left: 126px;
-    max-width: 570px;
-    /* totally winging it here! */
+.web_result .title {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.web_result .cont {
+    display: inline-block;
+    color: #006621;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.web_result .trad {
+    font-size: 1.1em;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.web_result .description {
+    margin: 0 auto;
+}
+/* Paginator styles */
+
+.paginator {
+    margin: 2em auto;
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+#next {
+    position: relative;
+    left: 600px;
+    top: -20px;
+    color: #1a0dab;
+    font-weight: bold;
+    font-size: small;
+    font-family: arial, sans-serif;
 }
