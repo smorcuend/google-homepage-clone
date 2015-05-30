@@ -80,13 +80,20 @@ define('ui', ['gapi'], function(GAPI) {
                 if (!searchText.length) {
                     return false;
                 }
-
-                GAPI.nextPage()
+                var type;
+                if (ref.components.searchImages.classList.contains('active')) {
+                    type = 'image';
+                };
+                GAPI.nextPage(type)
                     .then(function(response) {
                         var responseParsed = JSON.parse(response);
                         ref.refreshResults();
                         responseParsed.items.forEach(function(element) {
-                            ref.createWebResultItem(element);
+                            if (type === 'image') {
+                                ref.createImagesResultItem(element);
+                            } else {
+                                ref.createWebResultItem(element);
+                            }
                         });
                     })
                     .catch(function(responseError) {
@@ -102,12 +109,20 @@ define('ui', ['gapi'], function(GAPI) {
                 if (!searchText.length) {
                     return false;
                 }
-                GAPI.prevPage()
+                var type;
+                if (ref.components.searchImages.classList.contains('active')) {
+                    type = 'image';
+                };
+                GAPI.prevPage(type)
                     .then(function(response) {
                         var responseParsed = JSON.parse(response);
                         ref.refreshResults();
                         responseParsed.items.forEach(function(element) {
-                            ref.createWebResultItem(element);
+                            if (type === 'image') {
+                                ref.createImagesResultItem(element);
+                            } else {
+                                ref.createWebResultItem(element);
+                            }
                         });
                     })
                     .catch(function(responseError) {
@@ -124,8 +139,7 @@ define('ui', ['gapi'], function(GAPI) {
                 } else {
                     ref.components.searchContainer.classList.remove('morph');
                     ref.components.mainHeaderContainer.classList.remove('morph');
-                    //ref.hide(ref.components.headerResultsContainer);
-                    //ref.hide(ref.components.resultsContainer);
+                    ref.hide(ref.components.resultsContainer);
                 }
             };
             this.addListener(this.components.searchInput, 'input', function() {
@@ -133,10 +147,14 @@ define('ui', ['gapi'], function(GAPI) {
             });
 
             this.addListener(this.components.searchImages, 'click', function() {
+                ref.components.searchWeb.classList.remove('active');
+                this.classList.add('active');
                 _searchProcess('image');
             });
 
             this.addListener(this.components.searchWeb, 'click', function() {
+                ref.components.searchImages.classList.remove('active');
+                this.classList.add('active');
                 _searchProcess();
             });
 

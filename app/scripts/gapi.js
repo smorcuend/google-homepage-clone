@@ -32,11 +32,17 @@ define('gapi', [], function() {
             }
             return this.send(this.currentQuery);
         },
-        prevPage: function() {
+        prevPage: function(type) {
             this.resultsStartIndex -= this.resultsCount;
+            if (type === 'image') {
+                this.currentQuery += '&searchType=image&alt=json';
+            }
             return this.send(this.currentQuery + '&num=' + this.resultsCount + '&start=' + this.resultsStartIndex);
         },
-        nextPage: function() {
+        nextPage: function(type) {
+            if (type === 'image') {
+                this.currentQuery += '&searchType=image&alt=json';
+            }
             this.resultsStartIndex += this.resultsCount;
             return this.send(this.currentQuery + '&num=' + this.resultsCount + '&start=' + this.resultsStartIndex);
         },
@@ -48,6 +54,7 @@ define('gapi', [], function() {
             var ref = this;
             return new Promise(function(resolve, reject) {
                 req.open('GET', ref._queryBuilder(query), true);
+                //Test
                 //req.open('GET', 'http://localhost:9000/app/google_search_result_images.json', true);
                 req.onreadystatechange = function() {
                     if (req.readyState === 4) {
